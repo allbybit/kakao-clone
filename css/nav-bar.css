@@ -1,0 +1,60 @@
+.nav {
+  position: fixed;
+
+  /* width가 100%로 인 상태에서 padding이 50px가  */
+  /* 들어갔으므로 해당 크기 만큼 더 우측으로 자리를 차지한다. */
+  /* 따라서 이 경우에는 box-sizing: 이 필요하다; */
+  width: 100%;
+  padding: 20px 50px;
+  /* background-color: red; */
+  left: 0px;
+  bottom: 0px;
+  border-top: 1px solid #f7f7f7;
+  /*  */
+}
+
+.nav .nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav i {
+  font-size: 20px;
+}
+
+.nav .nav__list-link {
+  /* 위치 left top 등이 감안되어 위치가 결정된다. */
+  position: relative;
+  /* @todo@ static으로 바꾸게 되면 어떻게 되는지를 다시 정리하자 */
+  /* position: static; */
+}
+
+.nav .nav__badge {
+  position: absolute;
+  color: white;
+  background-color: #dc5d46;
+  top: -10px;
+  font-size: 11px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+@keyframes showNavBar {
+  from {
+    transform: translateY(80px);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.nav {
+  transform: translateY(80px);
+  animation: showNavBar 0.5s ease-out forwards;
+  animation-delay: 0.5s;
+}

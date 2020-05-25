@@ -1,0 +1,19 @@
+.status-bar {
+  /*flex 스타일로 선언  */
+  display: flex;
+  /* flex >> 동일한 간격으로 배치 */
+  justify-content: space-between;
+  /* status-bar 외부 밑으로 30px의 공간을 둠 */
+  margin-bottom: 30px;
+
+  /* 투명도를 적용한다. */
+  opacity: 0.7;
+}
+
+.status-bar i {
+  font-size: 14px;
+}
+
+.status-bar .status-bar__battery-level {
+  margin-left: 5px;
+}

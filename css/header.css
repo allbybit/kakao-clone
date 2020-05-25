@@ -1,0 +1,31 @@
+.header {
+  /* header는 flex로 정의한다 */
+  display: flex;
+  /* header 안에 div 객체가 동일한 비율로 가로로 */
+  justify-content: space-between;
+
+  /* 아래 마진 설정 30px */
+  margin-bottom: 30px;
+}
+
+.header .header__title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.header .header__icon {
+  font-size: 20px;
+  margin-left: 20px;
+  /* 이 태그 위치에 마우스를 위치하면 pointer로 변경된다. */
+  cursor: pointer;
+}
+
+.header .header__header-column {
+  display: flex;
+  align-items: center;
+}
+
+.header .header__back-btn {
+  font-size: 24px;
+  margin-right: 20px;
+}
